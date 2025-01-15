@@ -545,11 +545,6 @@ span {
     background-color: var(--second-color);
 }
 
-.footer-text,
-.footer-iconTop {
-    position: relative;
-}
-
 .footer-text p {
     font-size: 1.6rem;
 }
@@ -627,8 +622,7 @@ span {
 
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll {
+.skills.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;
 }
@@ -654,6 +648,12 @@ span {
 
     .footer {
         padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 991px) {
+    .animate.home-img {
+        width: 55%;
     }
 }
 
@@ -790,4 +790,4 @@ span {
     }
 }
 
-/* 1.57.59 (BUG FOOTER) */
+/* 1.01.32 */
