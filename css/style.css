@@ -588,6 +588,27 @@ span {
     color: var(--main-color)
 }
 
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.projects-detail {
+    display: none;
+}
+
+.projects-detail.active {
+    display: block;
+}
+
+.projects-box .numb {
+    font-size: 8rem;
+    -webkit-text-stroke: .07rem var(--text-color);
+    color: transparent;
+    line-height: 1;
+}
+
 .animate {
     position: absolute;
     top: 0;
@@ -790,4 +811,4 @@ span {
     }
 }
 
-/* 1.01.32 */
+/* 1.03.02 */
