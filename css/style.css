@@ -609,6 +609,58 @@ span {
     line-height: 1;
 }
 
+.projects-box h3 {
+    font-size: 3,5rem;
+    margin: .8rem 0 2rem;
+}
+
+.projects-box p {
+    font-size: 1.6rem;
+}
+
+.projects-box .tech {
+    margin: 2rem 0;
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--text-color);
+    padding-bottom: 2rem;
+}
+
+.projects-box .live-github a {
+    position: relative;
+    display: inline-flex;
+    padding: 1.3rem;
+    font-size: 3rem;
+    color: var(--text-color);
+    border-radius: 50%;
+    background: var(--second-color);
+}
+
+.projects-box .live-github a:first-child {
+    margin-right: 1.5rem;
+}
+
+.projects-box .live-github a:first-child i {
+    transform: rotate(135deg);
+}
+
+.projects-box .live-github a span {
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    background: var(--text-color);
+    color: var(--bg-color);
+    opacity: 0;
+    scale: 0.9;
+}
+
+/* sini */
+
 .animate {
     position: absolute;
     top: 0;
@@ -811,4 +863,4 @@ span {
     }
 }
 
-/* 1.03.02 */
+/* 1.07.00 */
