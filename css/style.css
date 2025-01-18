@@ -158,20 +158,6 @@ section {
     color: var(--bg-color);
 }
 
-
-/* .btn-box .btn:nth-child(1) {
-    background: transparent;
-    color: var(--main-color);
-}
-
-.btn-box .btn:nth-child(1):hover {
-    color: var(--bg-color);
-}
-
-.btn-box .btn:nth-child(1)::before {
-    background: var(--main-color);
-} */
-
 .btn-box .btn::before {
     content:'';
     position: absolute;
@@ -707,7 +693,6 @@ span {
     scale: 1;
 }
 
-
 /* sini */
 
 .animate {
@@ -912,4 +897,4 @@ span {
     }
 }
 
-/* 1.07.00 */
+/* 1.08.20 */
