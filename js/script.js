@@ -38,5 +38,16 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 
+const arrowRight = document.querySelector('.projects-box .navigation .arrow-right');
+const arrowLeft = document.querySelector('.projects-box .navigation .arrow-left');
+
+let index = 0;
+
+const activePortofolio = () => {
+    const imgSlide = document.querySelector('.projects-aldi .img-slide');
+
+    imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
+}
+
     // animation footer on scroll
 }
