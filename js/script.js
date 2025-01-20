@@ -49,5 +49,31 @@ const activePortofolio = () => {
     imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
 }
 
+arrowRight.addEventListener('click', () => {
+    if (index < 2) { //index yang ada di else -1
+        index++;
+        arrowLeft.classList.remove('disabled');
+    }
+    else {
+        index = 3; //jumlah berapa gambar -1
+        arrowRight.classList.add('disabled');
+    }
+
+    activePortofolio();
+});
+
+arrowLeft.addEventListener('click', () => {
+    if (index > 1) {
+        index--;
+        arrowRight.classList.remove('disabled');
+    }
+    else {
+        index = 0;
+        arrowLeft.classList.add('disabled');
+    }
+
+    activePortofolio();
+});
+
     // animation footer on scroll
 }
