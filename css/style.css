@@ -696,6 +696,7 @@ span {
     width: 100%;
     height: 45rem;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .projects-aldi .img-slide {
@@ -733,6 +734,11 @@ span {
     font-size: 4rem;
     color: var(--main-color);
     cursor: pointer;
+}
+
+.projects-box .navigation button.disabled {
+    border-color: var(--second-color);
+    color: #fff4;
 }
 
 .projects-box .navigation .arrow-right {
