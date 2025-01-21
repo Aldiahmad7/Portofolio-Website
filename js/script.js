@@ -45,8 +45,14 @@ let index = 0;
 
 const activePortofolio = () => {
     const imgSlide = document.querySelector('.projects-aldi .img-slide');
+    const projectsdetails = document.querySelectorAll('.projects-detail');
 
     imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
+
+    projectsdetails.forEach(detail => {
+        detail.classList.remove('active');
+    });
+    projectsdetails[index].classList.add('active');
 }
 
 arrowRight.addEventListener('click', () => {
