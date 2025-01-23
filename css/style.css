@@ -574,6 +574,14 @@ span {
     color: var(--main-color)
 }
 
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -781,7 +789,8 @@ span {
 
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll {
+.skills.show-animate .animate.scroll,
+.projects.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;
 }
