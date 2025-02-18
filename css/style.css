@@ -538,7 +538,7 @@ span {
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 74%;
+    width: 55%;
 }
 
 .projects {
@@ -743,8 +743,6 @@ span {
 .projects-box .navigation .arrow-right {
     margin-left: 1.5rem;
 }
-
-/* sini */
 
 .footer {
     display: flex;
@@ -1031,5 +1029,3 @@ span {
         width: 0;
     }
 }
-
-/* 1.22.35 */
