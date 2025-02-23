@@ -83,3 +83,12 @@ arrowLeft.addEventListener('click', () => {
 
     // animation footer on scroll
 }
+
+const phoenixModel = document.getElementById("phoenix-model");
+const section = Array.from(document.querySelectorAll("section"));
+
+const sectionOffsets = section.map(section => section.offsetTop);
+
+console.log(sectionOffsets);
+
+// 7.55
