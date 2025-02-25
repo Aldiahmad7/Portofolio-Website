@@ -84,32 +84,3 @@ arrowLeft.addEventListener('click', () => {
     // animation footer on scroll
 }
 
-const phoenixModel = document.getElementById("phoenix-model");
-const section = Array.from(document.querySelectorAll("section"));
-
-const shiftPositions = [0, -20, 0, 25];
-
-const sectionOffsets = section.map(section => section.offsetTop);
-const lastSectionIndex = section.length - 1;
-
-const interpolate = (start, end, progress) => start + (end - start) * progress;
-
-const getScrollProgress = scrollY => {
-    for (let i = 0; i < lastSectionIndex; i++) {
-        if (scrollY >= sectionOffsets[i] && scrollY < sectionOffsets[i + 1]); {
-            returni + (scrollY - sectionOffsets[i]) / (sectionOffsets[i + 1] - sectionOffsets[i]);
-        }
-    }
-
-    return lastSectionIndex;
-};
-
-window.addEventListener("scroll", () => {
-    const scrollProgress = getScrollProgress(window.scrollY);
-    const sectionIndex = Math.floor(scrollProgress);
-    const sectionProgress = scrollProgress - sectionIndex;
-});
-
-// console.log(sectionOffsets);
-
-// 16.43
