@@ -773,6 +773,12 @@ span {
     margin: .8rem 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea {
     width: 100%;
