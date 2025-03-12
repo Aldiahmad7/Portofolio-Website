@@ -82,32 +82,3 @@ arrowLeft.addEventListener('click', () => {
 });
 
 }
-
-const form = document.querySelector("form");
-const fullname = document.getElementById("name")
-const email = document.getElementById("email")
-const phone = document.getElementById("phone")
-const subject = document.getElementById("subject")
-const mess = document.getElementById("message")
-
-function sendEmail() {
-    Email.send({
-        Host : "s1.maildns.net",
-        Username : "aldiahmaddani0@gmail.com",
-        Password : "A30A734E70141214E8B3B3D46CAAC4C9CAB5",
-        To : 'aldiahmaddani0@gmail.com',
-        From : "aldiahmaddani0@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    sendEmail();
-});
-
-// 13.10
