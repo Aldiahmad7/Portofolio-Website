@@ -54,12 +54,12 @@ const activePortofolio = () => {
 }
 
 arrowRight.addEventListener('click', () => {
-    if (index < 2) { //index yang ada di else -1
+    if (index < 5) { //index yang ada di else -1
         index++;
         arrowLeft.classList.remove('disabled');
     }
     else {
-        index = 3; //jumlah berapa gambar -1
+        index = 6; //jumlah berapa gambar -1
         arrowRight.classList.add('disabled');
     }
 
